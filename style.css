@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+#add-book__dialog {
+  width: 20rem;
+}
+
+#add-book__dialog h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.formError {
+  color: red;
+  margin-bottom: 1rem;
+}
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+#add-book__form input[type="text"],
+#add-book__form button {
+  width: 100%;
+  padding: 0.5rem;
+}

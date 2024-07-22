@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <button id="add-book">Add Book</button>
+    <dialog id="add-book__dialog">
+      <h2>Add a new book</h2>
+      <p>Complete the form to add a new book</p>
+      <form method="dialog" id="add-book__form">
+        <div class="formError"></div>
+        <div class="inputGroup">
+          <input
+            type="text"
+            name="name"
+            id="add-book__name"
+            placeholder="Book name"
+          />
+        </div>
+        <div class="inputGroup">
+          <input
+            type="text"
+            name="author"
+            id="add-book__author"
+            placeholder="Author"
+          />
+        </div>
+        <div class="inputGroup">
+          <input
+            type="text"
+            name="pages"
+            id="add-book__pages"
+            placeholder="Number of pages"
+          />
+        </div>
+        <button>Submit</button>
+      </form>
+    </dialog>
+  </body>
 </html>
