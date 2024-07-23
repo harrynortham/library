@@ -31,8 +31,9 @@ function showBooks() {
   booksContainer.innerHTML = "";
   myLibrary.map((book) => {
     //create each element add to the contaienr
+    const { name, author, pages } = book; //desctructure the object
     const newDiv = document.createElement("div");
-    newDiv.innerHTML = `<div>${book.name}</div> <button>Read</button>`;
+    newDiv.innerHTML = `<div>${name} - ${author}</div> <button>Read</button>`;
 
     newDiv.addEventListener("click", () => {
       book.read();
